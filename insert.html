@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Zhuyinwen Translator</title>
+</head>
+<body>
+    <div>
+        <div> words</div>
+        <FORM METHOD="POST" ACTION="../engine/Zhuyinwen">
+            <input name="type" type="hidden" value="words">
+            <textarea name="values"></textarea>
+            <input type="submit" value="submit">
+        </FORM>
+    </div>
+    <div>
+        <div> Terms</div>
+        <FORM METHOD="POST" ACTION="../engine/Zhuyinwen">
+            <input name="type" type="hidden" value="terms">
+            <textarea name="values"></textarea>
+            <input type="submit" value="submit">
+        </FORM>
+    </div>
+    <div>
+        <div>New Terms</div>
+        <FORM METHOD="POST" ACTION="../engine/Zhuyinwen">
+            <input name="type" type="hidden" value="newterms">
+            <textarea name="values"></textarea>
+            <input type="submit" value="submit">
+        </FORM>
+    </div>
+</body>
+</html>
