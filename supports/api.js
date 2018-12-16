@@ -1,5 +1,6 @@
-var SITE = '../engine/Zhuyinwen';
+//var SITE = '../engine/Zhuyinwen';
 //var SITE = 'http://ntuaha.0fees.net/Zhuyinwen/api/query.php';
+var SITE = 'https://funny.aha.taipei/zhuyinwen/api/';
 
 $(function(){
 /*
@@ -37,10 +38,10 @@ $("#zhuyinwen-query").focus();
 
 function query(obj){
     $.ajax({
-        url:SITE,
+        url:SITE+$("#zhuyinwen-query").val(),
         dataType:"json",
         method:"get",
-        data:{'zq':$("#zhuyinwen-query").val()},
+//        data:{'zq':$("#zhuyinwen-query").val()},
         /*智障至極的錯誤*/
         //data:{'q':$("#zhuyinwen-query").val()},
         success:function(r){
@@ -61,7 +62,8 @@ function query(obj){
                             html = html+"<tr class=\"active\">";
                     }
 
-                    data = r[i][0];
+                    //data = r[i][0];
+                    data = r[i]['cq'];
                     //type = r[i][0];
                     html = html+"<td>"+data+"</td>";
                     //$("<div>"+data+"</div>").appendTo("#zhuyinwen-query-result");
