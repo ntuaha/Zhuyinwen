@@ -2,11 +2,27 @@
   "name": "zhuyinwen",
   "version": "0.0.1",
   "dependencies": {
-  	"pg": "0.5.4",
-    "express": "2.5.x"
+    "@google-cloud/datastore": "^2.0.0",
+    "express": "2.5.x",
+    "pg": "0.5.4"
   },
   "engines": {
     "node": "0.8.x",
     "npm": "1.1.x"
-  }
+  },
+  "main": "web.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ntuaha/Zhuyinwen.git"
+  },
+  "author": "aha",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ntuaha/Zhuyinwen/issues"
+  },
+  "homepage": "https://github.com/ntuaha/Zhuyinwen#readme",
+  "description": ""
 }
